@@ -7,14 +7,15 @@ const authController = require('../controllers/authController')
 const userController = require('../controllers/userController')
 
 const { checkAuth } = require('../middlewares/auth')
+//rota raíz: /posto
 
 router.post('/u/login', authController.login)
 router.post('/u/cadastro', userController.cadastraUser)
 
 router.get('/lista', controller.exibePosto)
-router.post('/p/cadasto', checkAuth, controller.cadastraPosto)
+router.post('/cadastro', checkAuth, controller.cadastraPosto)
 router.get('/busca/:id', checkAuth, controller.buscaPostoPorId)
-router.patch('/p/atualizar/:id', checkAuth, controller.atualizaPosto)
-router.delete('/p/apagar', checkAuth, controller.apagaPosto)
+router.patch('/atualizar/:id', checkAuth, controller.atualizaPosto)
+router.delete('/apagar/:id', checkAuth, controller.apagaPosto)
 
 module.exports = router

@@ -117,7 +117,7 @@ const atualizaPosto = async (req,res)=>{
             message: 'O campo "Bairro" é obrigatório'
         })
     }
-    if (servicos.trim()==''){
+    if (posto.servicos[0].trim()==''){
         return res.status(400).send({
             message: 'O campo "Serviços" é obrigatório'
         })

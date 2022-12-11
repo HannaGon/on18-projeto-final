@@ -12,6 +12,6 @@ app.use(cors())
 database.connect()
 
 //app.use(indexRouter)
-app.use(routerPosto)
+app.use('/posto', routerPosto)
 
 module.exports = app
