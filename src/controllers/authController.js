@@ -22,7 +22,8 @@ const login = (req,res)=> {
             const token = jwt.sign(user.nome, SECRET)
             console.log(`Token gerado: ${token}`)
             res.status(200).send({
-                message: 'Login efetuado com sucesso'
+                message: 'Login efetuado com sucesso',
+                token
             })
             })
     } catch (error) {
