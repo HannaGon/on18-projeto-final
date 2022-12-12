@@ -13,8 +13,9 @@ router.post('/u/login', authController.login)
 router.post('/u/cadastro', userController.cadastraUser)
 
 router.get('/lista', controller.exibePosto)
+router.get('/busca/:id', controller.buscaPostoPorId)
+
 router.post('/cadastro', checkAuth, controller.cadastraPosto)
-router.get('/busca/:id', checkAuth, controller.buscaPostoPorId)
 router.patch('/atualizar/:id', checkAuth, controller.atualizaPosto)
 router.delete('/apagar/:id', checkAuth, controller.apagaPosto)
 
