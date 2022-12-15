@@ -15,74 +15,27 @@ Essa API tem como objetivo catalogar e listar postinhos do SUS com farmácia par
 
 ## Rotas
 
-#### GET - Lista todos os postos
+#### Lista de rotas padrão da API
 
-```http
-  GET /posto/lista
-```
-
-| Parameter | Type     | Description                |
+| Rota | Caminho     | Descrição                |
 | :-------- | :------- | :------------------------- |
-| `N/A` | `N/A` | Retorna **todos** os postos cadastrados. |
-
-#### GET - Busca por ID
-
-```http
-  GET /posto/busca/:id
-```
-
-| Parameter | Type     | Description                       |
+| `GET` | `/posto/lista` | Retorna **todos** os postos cadastrados. |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | Retorna apenas o posto com o **id**enviado. |
-
-### POST - Cadastrar novo posto
-
-```http
-  POST /posto/cadastro
-```
-
-| Parameter | Type     | Description                |
+| `GET`      | `/posto/busca/:id` | Retorna apenas o posto com o **id**enviado. |
 | :-------- | :------- | :------------------------- |
-| `body` | `object` | Cadastra novo posto no sistema. **Autenticação necessária**.|
-
-#### PATCH - Atualizar posto
-
-```http
-  PATCH /posto/atualizar/:id
-```
-
-| Parameter | Type     | Description                       |
+| `POST` | `/posto/cadastro` | Cadastra novo posto no sistema. **Autenticação necessária**.|
 | :-------- | :------- | :-------------------------------- |
-| `body`      | `object` | Atualiza posto cadastrado **Autenticação necessária** |
-
-### DELETE - Apaga cadastro de posto
-
-```http
-  GET /posto/apagar/:id
-```
-
-| Parameter | Type     | Description                |
+| `PATCH`      | `/posto/atualizar/:id` | Atualiza posto cadastrado **Autenticação necessária** |
 | :-------- | :------- | :------------------------- |
-| `id` | `string` | Apaga cadastro de posto **Autenticação necessária** |
+| `DELETE` | `/posto/apagar/:id` | Apaga cadastro de posto **Autenticação necessária** |
 
-#### POST - Cadastro de usuário
+#### Lista de rotas de autenticação da API
 
-```http
-  POST /posto/u/cadastro
-```
-
-| Parameter | Type     | Description                       |
+| Rota | Caminho     | Descrição                |
 | :-------- | :------- | :-------------------------------- |
-| `body`      | `object` | Cadastra novo usuário no sistema |
-
-### POST - Login de usuário
-```http
-  POST /posto/u/login
-```
-
-| Parameter | Type     | Description                |
+| `POST`      | `/posto/u/cadastro` | Cadastra novo usuário no sistema |
 | :-------- | :------- | :------------------------- |
-| `body` | `object` | Efetua login de usuário para rotas com Autenticação |
+| `POST` | `/posto/u/login` | Efetua login de usuário para rotas com Autenticação |
 
 ## Variáveis de ambiente
 
