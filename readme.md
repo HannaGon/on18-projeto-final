@@ -20,21 +20,16 @@ Essa API tem como objetivo catalogar e listar postinhos do SUS com farmácia par
 | Rota | Caminho     | Descrição                |
 | :-------- | :------- | :------------------------- |
 | `GET` | `/posto/lista` | Retorna **todos** os postos cadastrados. |
-| :-------- | :------- | :-------------------------------- |
 | `GET`      | `/posto/busca/:id` | Retorna apenas o posto com o **id**enviado. |
-| :-------- | :------- | :------------------------- |
 | `POST` | `/posto/cadastro` | Cadastra novo posto no sistema. **Autenticação necessária**.|
-| :-------- | :------- | :-------------------------------- |
 | `PATCH`      | `/posto/atualizar/:id` | Atualiza posto cadastrado **Autenticação necessária** |
-| :-------- | :------- | :------------------------- |
 | `DELETE` | `/posto/apagar/:id` | Apaga cadastro de posto **Autenticação necessária** |
 
 #### Lista de rotas de autenticação da API
 
 | Rota | Caminho     | Descrição                |
-| :-------- | :------- | :-------------------------------- |
-| `POST`      | `/posto/u/cadastro` | Cadastra novo usuário no sistema |
 | :-------- | :------- | :------------------------- |
+| `POST`      | `/posto/u/cadastro` | Cadastra novo usuário no sistema |
 | `POST` | `/posto/u/login` | Efetua login de usuário para rotas com Autenticação |
 
 ## Variáveis de ambiente
