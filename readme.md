@@ -1,5 +1,5 @@
 
-![Logo](https://i.postimg.cc/g06Xz4wg/projetofinal-postoamigo-on18.png)
+![Logo](https://i.postimg.cc/PrN1p3Fn/postinho-amigo-com-stroke-do-git.png)
 
 
 # Postinho Amigo
